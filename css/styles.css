@@ -225,24 +225,14 @@ img {
 }
 
 /*****lorem *****/
-/* .lorem .container{
+.lorem .container{
   display: flex;
-} */
-/* .lorem__item {
+}
+
+.lorem__list{
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column;
-} */
-/* .lorem .container{
-  display: flex;
-} */
-/* .lorem_list{
-  display: flex;
-  justify-content: space-between;
-
-} */
-
-
+}
 .lorem__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -257,14 +247,33 @@ img {
 }
 
 .radar{
-  width: 65.32px;
+  width: 65px;
   height: 70px;
 }
+.clock{
+  width: 67px;
+  height: 70px;
+}
+.computer{
+  width: 70px;
+  height: 54px;
+}
+.cosmo{
+  width: 55px;
+  height: 60px;
+}
 
-/* .lorem__card{
+ .lorem__svg{
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+ }
 
-} */
+
 
 /******** END LOREM   ******/
 
@@ -276,14 +285,11 @@ img {
     letter-spacing: 0.03em;
     color: #212121;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .gallery__list {
   display: flex;
   justify-content: space-between;
-  padding-right: 215px;
-  padding-left: 215px;
-  padding-bottom: 94px;
 }
 .gallery__list-item:not(:last-child) {
     margin-right: 30px;
@@ -302,15 +308,12 @@ img {
     letter-spacing: 0.03em;
     color: #212121;
     text-align: center;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 .team__list{
     display: flex;
   justify-content: space-between;
-  padding-right: 215px;
-  padding-left: 215px;  
-  padding-bottom: 94px;
+
 }
   .team__card:not(:last-child) {
     margin-right: 30px;
