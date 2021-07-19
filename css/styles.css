@@ -43,49 +43,27 @@ img {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
 }
 
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .header .container {
   display: flex;
 }
-.section {
+/* .section {
   width: 1200px;
   padding-top: 130px;
   padding-bottom: 130px;
   padding-left: 250px;
   padding-right: 250px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-.navigation-list {
-  display: flex;
-}
-
-.header .navigation-logo {
-  padding-top: 24px;
-  padding-left: 215px;
-  padding-right: 93px;
-  padding-bottom: 25px;
-}
-
-.navigation-item:not(:last-child) {
-  margin-right: 46px;
-}
-
-.header__email {
-  margin-left: auto;
-  margin-right: 50px;
-}
-.header__phone-number {
-  margin-right: 227px;
-}
+} */
 /****COMPONENTS*******/
 .modal-btn {
   font-weight: 700;
@@ -94,13 +72,39 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
-  width: 200px;
-  height: 50px;
+  padding: 10px 42px;
  }
 
 /**** END COMPONENTS****/
 
 /*****HEADER*****/
+.header .container{
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-logo{
+  margin-right: 93px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.navigation-item:last-child {
+  margin-right: auto;
+}
+
 .navigation-logo,
 .navigation-logo-footer {
   font-family: Raleway;
@@ -109,12 +113,13 @@ img {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-right: 93px;
 }
 
 .navigation__link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.142;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -123,9 +128,10 @@ img {
 .header__email {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.172;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-left: 10px;
 }
 
 .navigation__link:hover,
@@ -139,19 +145,54 @@ img {
 .footer__email:hover,
 .footer__email:focus,
 .footer__phone-number:hover,
-.footer__phone-number:focus,
+.footer__phone-number:focus
 {
   color: var(--main-color);
+  stroke: var(--main-color);
+  stroke-width: 2px;
+}
+.header__email{
+  margin-left: 345px;
+}
+.header__phone-number{
+  margin-left: 30px;
+}
+.envelope,
+.telephone{
+  width: 16px;
+  height: 12px;
+  /* margin-right: 10px; */
+}
+.envelope:hover,
+.envelope:focus,
+.telephone:hover,
+.telephone:focus{
+  stroke: var(--main-color);
+  stroke-width: 2px;
 }
 
 /*****END HEADER*****/
 
-/*****MAIN*****/
-.one {
+/*****HERO*****/
+.hero .container{
+  display: flex;
+  flex-direction: column;
   height: 600px;
   background-color: #2f303a;
-  flex-direction: column;
-  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background-image: url("../images/hego-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(47, 48, 58, 0.4);
+  /* background-color: #2F303A66; */
+
+}
+.hero .modal-btn{
+  align-items: center;
+  margin-bottom: 200px;
+   
+  
 }
 .main-header {
   font-size: 44px;
@@ -160,10 +201,9 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-align: center;
+  width: 696px;
 }
 
 .secondary-header,
@@ -185,17 +225,24 @@ img {
 }
 
 /*****lorem *****/
-
-.lorem__list {
+/* .lorem .container{
+  display: flex;
+} */
+/* .lorem__item {
   display: flex;
   justify-content: space-between;
-  padding-left: 215px;
-  padding-right: 215px;
-}
-.lorem__item {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  /* flex-direction: column;
+} */
+/* .lorem .container{
+  display: flex;
+} */
+/* .lorem_list{
+  display: flex;
+  justify-content: space-between;
+
+} */
+
+
 .lorem__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -208,6 +255,17 @@ img {
   color: #757575;
   width: 270px;
 }
+
+.radar{
+  width: 65.32px;
+  height: 70px;
+}
+
+/* .lorem__card{
+  display: flex;
+
+} */
+
 /******** END LOREM   ******/
 
 /***** GALERY  ****/
