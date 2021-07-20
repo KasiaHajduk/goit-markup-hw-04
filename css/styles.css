@@ -172,25 +172,29 @@ img {
 /*****END HEADER*****/
 
 /*****HERO*****/
-.hero .container{
-  display: flex;
-  flex-direction: column;
-  height: 600px;
-  background-color: #2f303a;
+.hero {
+  /* display: flex;
   align-items: center;
-  flex-grow: 1;
+  justify-content: center; */
+  height: 600px;
+  width: 1600px;
+  margin: 0 auto;
+  background-color: #2f303a;
   background-image: url("../images/hego-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(47, 48, 58, 0.4);
-  /* background-color: #2F303A66; */
+}
 
+.hero .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
 }
 .hero .modal-btn{
   align-items: center;
   margin-bottom: 200px;
-   
-  
 }
 .main-header {
   font-size: 44px;
@@ -341,7 +345,7 @@ img {
     background-color: #FFFFFF;
 }
 
-.team__social-list{
+.social-list{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -349,7 +353,7 @@ img {
   padding-right: 30px;
   padding-bottom: 30px;
 }
-.team__social-list__link{
+.social-list__link{
   display: flex;
   width: 44px;
   height: 44px;
@@ -360,44 +364,87 @@ img {
   justify-content: center;
 }
 
-.team__social-icon{
+.social-icon{
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
 }
 
-.team__social-icon:focus,
-.team__social-icon:hover,
-.team__social-list__link:hover
+.social-icon:focus,
+.social-icon:hover,
+.social-list__link:hover
 {
   fill: #ffffff; 
   color: #ffffff; 
   background-color: var(--main-color);
 }
+/**END TEAM**/
+/** CLIENTS **/
+.clients__logo{
+  width: 106px;
+  height: 60px;
+
+}
+.clients__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.clients__list-item{
+  border: 1px solid #AFB1B8;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.clients__logo:focus,
+.clients__logo:hover,
+{
+  fill: var(--main-color); 
+  color: var(--main-color); 
+  background-color: var(--main-color);
+}
+/** END CLIENTS **/
 
 /************footer***********/
+
+.footer .container{
+  display: flex;
+  /* justify-content: flex-end; */
+  /* flex-direction: column;
+  align-items: center;
+  flex-grow: 1; */
+}
+
 .footer{
+  width: 1600px;
+  margin: 0 auto;
   background-color: #2F303A;
   padding-top: 60px;
-  /**padding-left: 215px;***/
+  padding-bottom: 60px;
 }
 
-.footer .navigation-logo{
-  padding-left: 215px;
+.footer__right-side{
+  margin-left: 70px;
+  padding-left: 70px;
 }
+
 .navigation-footer
 {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 60px;
-    padding-left: 215px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
-.address_item:not(:last-child) {
-    margin-top: 9px;
-  }
-.footer__phone-number,
-.footer__email {
+.address__item{
+  padding-bottom: 9px;
+}
+
+.footer__link{
   font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
@@ -407,12 +454,18 @@ img {
 
 .address__link {
   font-size: 14px;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff99;
-  background-color: #2f303a;
+  color: #ffffff;
+}
+
+.address__link:focus,
+.address__link:hover
+.footer__link:focus,
+.footer__link:hover{
+  color: var(--main-color);
 }
 
 /********portfolio-buttons *****/
