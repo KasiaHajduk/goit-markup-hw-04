@@ -54,13 +54,6 @@ img {
   padding-bottom: 94px;
 }
 
-/* .section {
-  width: 1200px;
-  padding-top: 130px;
-  padding-bottom: 130px;
-  padding-left: 250px;
-  padding-right: 250px;
-} */
 /****COMPONENTS*******/
 .modal-btn {
   font-weight: 700;
@@ -76,11 +69,16 @@ img {
 
 /*****HEADER*****/
 
+.header{
+  border-bottom : 1px solid #ECECEC;
+}
+
 .header .container{
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  
 }
 .navigation {
   display: flex;
@@ -179,11 +177,11 @@ img {
   height: 600px;
   width: 1600px;
   margin: 0 auto;
-  background-color: #2f303a;
-  background-image: url("../images/hego-bg.jpg");
+  background-image: url("../images/hego-bg.jpg"), linear-gradient(#eb01a5, #d13531);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(47, 48, 58, 0.4);
+  background-color: #2F303A66;
+
 }
 
 .hero .container{
@@ -408,14 +406,10 @@ border-radius: 0px 0px 4px 4px;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-
 }
 
 .clients__list-link:focus,
-.clients__list-link:hover
-/* .clients__list-item__link:focus,
-.clients__list-item__link:hover */
-{
+.clients__list-link:hover{
   fill: var(--main-color); 
   border: 1px solid var(--main-color);
 }
@@ -425,10 +419,6 @@ border-radius: 0px 0px 4px 4px;
 
 .footer .container{
   display: flex;
-  /* justify-content: flex-end; */
-  /* flex-direction: column;
-  align-items: center;
-  flex-grow: 1; */
 }
 
 .footer{
@@ -527,7 +517,19 @@ border-radius: 0px 0px 4px 4px;
   color: #ffffff; 
   background-color: var(--main-color);
 }
+
+/*****  SECOND   *****/
+.second {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
 /********portfolio-buttons *****/
+
+.portfolio{
+  /* padding-top: 50px; */
+  padding-bottom: 64px;
+}
 
 .buttons__item {
   font-weight: 500;
@@ -539,9 +541,11 @@ border-radius: 0px 0px 4px 4px;
   background: #F5F4FA;
   border-radius: 4px;
   border: 0px;
+  cursor: pointer;
 }
 .a,
-.button {
+.button 
+{
   text-decoration: inherit;
   cursor: pointer;
   color: inherit;
@@ -550,18 +554,50 @@ border-radius: 0px 0px 4px 4px;
 .buttons__item:focus{
   background-color: var(--main-color);
   color: #FFFFFF;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons__list{
     display: flex;
-    padding-left: 510px;
-    padding-bottom: 56px;
-}
+    align-items: center;
+    justify-content: center;
+ }
 .buttons__item:not(:last-child) {
     margin-right: 30px;
   }
 
 
+ /*****  PORTFOLIO *****/ 
+ .portfolio__list {
+   display: flex;
+   flex-wrap: wrap;
+   flex-container: wrap;
+ }
+
+ .portfolio__card-wrapper{
+  width: 370px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+  /* align-items: center; */
+}
+
+.portfolio__card:nth-child(3n+1){
+  margin-right: 30px;
+  margin-bottom: 30px;
+}  
+.portfolio__card:nth-child(3n+2){
+  margin-right: 30px;
+  margin-bottom: 30px;
+}  
+.portfolio__card:nth-child(3n+3){
+  margin-bottom: 30px;
+}
+
+.portfolio__item{
+  width: 368px;
+  height: 294px;
+}
 .portfolio__name {
   font-size: 18px;
   font-weight: 700;
@@ -569,6 +605,7 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.06em;
   padding-top: 20px;
   padding-bottom: 4px;
+  padding-left: 24px;
   
 }
 .portfolio__title {
@@ -576,35 +613,12 @@ border-radius: 0px 0px 4px 4px;
   line-height: 30px;
   letter-spacing: 0.03em;
   padding-bottom: 20px;
+  padding-left: 24px;
+}
+
  
+.portfolio__card-wrapper:focus,
+.portfolio__card-wrapper:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio__card-wrapper{
-    
-    background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    width: 322px;
-    padding-left: 24px;
-    padding-right: 24px;
-    align-items: center;
-    }
-
-.portfolio__card:focus,
-.portfolio__card:hover{
-    border: 1px solid var(--main-color);
-}
-
-    .portfolio__card:not(:last-child) {
-        margin-right: 30px;
-        margin-bottom: 30px;
-      }    
-
-
-
-.portfolio__list
-{
-   padding-left: 215px;
-   padding-bottom: 94px;
-display: flex;
-flex-wrap: wrap;
-flex-container: wrap;
-}
+     
