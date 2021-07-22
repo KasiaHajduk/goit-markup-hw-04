@@ -177,7 +177,7 @@ img {
   height: 600px;
   width: 1600px;
   margin: 0 auto;
-  background-image: url("../images/hego-bg.jpg"), linear-gradient(#eb01a5, #d13531);
+  background-image: url("../images/hego-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #2F303A66;
